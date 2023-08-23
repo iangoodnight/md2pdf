@@ -1,11 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.6)
+    activesupport (7.0.7.2)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    base64 (0.1.1)
     concurrent-ruby (1.2.2)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
@@ -17,12 +18,15 @@ GEM
       kramdown (>= 1.5.0)
       props (>= 1.1.2)
       textutils (>= 0.10.0)
-    minitest (5.18.1)
+    minitest (5.19.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.9)
     pdfkit (0.8.7.3)
     props (1.2.0)
       iniparser (>= 0.1.0)
+    puma (6.3.1)
+      nio4r (~> 2.0)
     rack (2.2.7)
     rack-protection (3.0.6)
       rack
@@ -48,8 +52,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64
   markdown (= 1.2.0)
   pdfkit
+  puma
   sinatra
   sinatra-cors
 
